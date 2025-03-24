@@ -48,4 +48,20 @@ public class Main
             throw new RuntimeException(e);
         }
     }
+    public void AggiuntaRecord (BufferedWriter bw, BufferedReader br, String next)
+    {
+        try
+        {
+            next="*";
+            do
+            {
+                br.readLine();
+                bw.write(";false");
+
+            } while (next!=null);
+        } catch (Exception e)
+        {
+            throw new RuntimeException(e);
+        }
+    }
 }
